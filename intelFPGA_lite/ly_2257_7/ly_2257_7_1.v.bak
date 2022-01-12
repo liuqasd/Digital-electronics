@@ -1,0 +1,47 @@
+module gzy_2228_7_1(clk_in,reset,Key,div,name1);//计划clk_in输入频率为50MHz
+input clk_in,reset;
+input [13:0] Key;
+output reg[20:0] div;
+output reg[3:0] name1;
+
+reg [41:0]cnt;
+
+
+always @(posedge clk_in or negedge reset)begin
+if(!reset)
+	begin
+		div<=0;
+		name1<=4'd0;
+		cnt<=0;
+	end
+else
+begin
+	case(Key)
+		//14'b000_000_000_000_01:begin div<=21'd255105;name<=4'd12;end//GL	
+		//14'b000_000_000_000_10:begin div<=21'd227273;name<=4'd13;end//AL
+		//14'b000_000_000_001_00:begin div<=21'd202491;name<=4'd14;end//BL
+		14'b000_000_000_000_00:begin div<=21'd0;name1<=4'd0;end
+		
+		14'b000_000_000_000_01:begin div<=21'd191113;name1<=4'd1;end//C
+		14'b000_000_000_000_10:begin div<=21'd170262;name1<=4'd2;end//D
+		14'b000_000_000_001_00:begin div<=21'd151686;name1<=4'd3;end//E
+	
+		14'b000_000_000_010_00:begin div<=21'd143173;name1<=4'd4;end//F
+		14'b000_000_000_100_00:begin div<=21'd127553;name1<=4'd5;end//G
+		14'b000_000_001_000_00:begin div<=21'd113636;name1<=4'd6;end//A
+	
+		14'b000_000_010_000_00:begin div<=21'd101239;name1<=4'd7;end//B
+		14'b000_000_100_000_00:begin div<=21'd95556;name1<=4'd8;end//CH
+		14'b000_001_000_000_00:begin div<=21'd85131;name1<=4'd9;end//DH
+	
+		14'b000_010_000_000_00:begin div<=21'd75847;name1<=4'd10;end//EH
+		14'b000_100_000_000_00:begin div<=21'd71586;name1<=4'd11;end//FH
+		14'b001_000_000_000_00:begin div<=21'd63783;name1<=4'd12;end//GH
+	
+		14'b010_000_000_000_00:begin div<=21'd56818;name1<=4'd13;end//AH
+		14'b100_000_000_000_00:begin div<=21'd50619;name1<=4'd14;end//BH
+			default:begin div<=21'd191113;name1<=4'd1;end//C
+	endcase
+end
+end
+endmodule

@@ -1,0 +1,81 @@
+module gzy_2228_7_4(clk_in,Auto,reset,current,name2);
+input clk_in,Auto,reset;
+output reg[3:0] name2;
+output reg [19:0]current;
+reg [41:0]cnt1;
+reg [41:0]cnt2;
+reg [19:0]temp[91:0];
+
+reg [8:0] i;
+localparam 
+	c=21'd191113,
+	d=21'd170262,
+	e=21'd151686,
+	f=21'd143173,
+	g=21'd127553,
+	a=21'd113636,
+	x=1'd0;
+
+
+always@(posedge clk_in or negedge reset)
+begin
+	if(!reset)
+		begin
+			cnt1<=0;
+			current<=x;
+			i<=0;
+			temp[0]<=c;temp[1]<=x;temp[2]<=c;temp[3]<=x;temp[4]<=g;temp[5]<=x;temp[6]<=g;temp[7]<=x;temp[8]<=a;temp[9]<=x;temp[10]<=a;temp[11]<=x;
+			temp[12]<=g;temp[13]<=x;temp[14]<=x;temp[15]<=x;
+			
+			temp[16]<=f;temp[17]<=x;temp[18]<=f;temp[19]<=x;temp[20]<=e;temp[21]<=x;temp[22]<=e;temp[23]<=x;temp[24]<=d;temp[25]<=x;temp[26]<=d;temp[27]<=x;
+			temp[28]<=c;temp[29]<=x;temp[30]<=x;temp[31]<=x;
+			
+			temp[32]<=g;temp[33]<=x;temp[34]<=g;temp[35]<=x;temp[36]<=f;temp[37]<=x;temp[38]<=f;temp[39]<=x;temp[40]<=e;temp[41]<=x;temp[42]<=e;temp[43]<=x;
+			temp[44]<=d;temp[45]<=x;
+			
+			temp[46]<=g;temp[47]<=x;temp[48]<=g;temp[49]<=x;temp[50]<=f;temp[51]<=x;temp[52]<=f;temp[53]<=x;temp[54]<=e;temp[55]<=x;temp[56]<=e;temp[57]<=x;
+			temp[58]<=d;temp[59]<=x;
+			
+			temp[60]<=c;temp[61]<=x;temp[62]<=c;temp[63]<=x;temp[64]<=g;temp[65]<=x;temp[66]<=g;temp[67]<=x;temp[68]<=a;temp[69]<=x;temp[70]<=a;temp[71]<=x;
+			temp[72]<=g;temp[73]<=x;temp[74]<=x;temp[75]<=x;
+			
+			temp[76]<=f;temp[77]<=x;temp[78]<=f;temp[79]<=x;temp[80]<=e;temp[81]<=x;temp[82]<=e;temp[83]<=x;temp[84]<=d;temp[85]<=x;temp[86]<=d;temp[87]<=x;
+			temp[88]<=c;temp[89]<=x;temp[90]<=g;temp[91]<=x;
+		end
+	else if(Auto)
+		begin
+			cnt1<=cnt1+1'b1;
+			if(cnt1==25'd25_000_000)
+				begin
+					cnt1<=0;
+					current<=temp[i];
+					i<=i+1;
+					if(i>91)
+						i<=0;
+				end
+	end
+end
+
+
+always@(posedge clk_in or negedge reset)
+begin
+	if(!reset)
+		name2<=0;
+	else
+	begin
+	case(current)
+	
+	c:name2<=4'd1;
+	d:name2<=4'd2;
+	e:name2<=4'd3;
+	f:name2<=4'd4;
+	g:name2<=4'd5;
+	a:name2<=4'd6;
+
+	default: name2<=0;
+	endcase
+	end
+end
+	
+endmodule
+			

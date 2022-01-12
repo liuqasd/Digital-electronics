@@ -1,0 +1,320 @@
+$comment
+	File created using the following command:
+		vcd file ly_2257_3.msim.vcd -direction
+$end
+$date
+	Mon Oct 25 20:14:39 2021
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module ly_2257_3_vlg_vec_tst $end
+$var reg 1 ! clk $end
+$var reg 1 " clr $end
+$var reg 4 # d [3:0] $end
+$var reg 1 $ en $end
+$var reg 1 % ld $end
+$var reg 1 & ud $end
+$var wire 1 ' CO $end
+$var wire 1 ( Q [3] $end
+$var wire 1 ) Q [2] $end
+$var wire 1 * Q [1] $end
+$var wire 1 + Q [0] $end
+$var wire 1 , codeout [6] $end
+$var wire 1 - codeout [5] $end
+$var wire 1 . codeout [4] $end
+$var wire 1 / codeout [3] $end
+$var wire 1 0 codeout [2] $end
+$var wire 1 1 codeout [1] $end
+$var wire 1 2 codeout [0] $end
+$var wire 1 3 seg $end
+
+$scope module i1 $end
+$var wire 1 4 gnd $end
+$var wire 1 5 vcc $end
+$var wire 1 6 unknown $end
+$var tri1 1 7 devclrn $end
+$var tri1 1 8 devpor $end
+$var tri1 1 9 devoe $end
+$var wire 1 : Q[0]~output_o $end
+$var wire 1 ; Q[1]~output_o $end
+$var wire 1 < Q[2]~output_o $end
+$var wire 1 = Q[3]~output_o $end
+$var wire 1 > CO~output_o $end
+$var wire 1 ? codeout[0]~output_o $end
+$var wire 1 @ codeout[1]~output_o $end
+$var wire 1 A codeout[2]~output_o $end
+$var wire 1 B codeout[3]~output_o $end
+$var wire 1 C codeout[4]~output_o $end
+$var wire 1 D codeout[5]~output_o $end
+$var wire 1 E codeout[6]~output_o $end
+$var wire 1 F seg~output_o $end
+$var wire 1 G clk~input_o $end
+$var wire 1 H clk~inputclkctrl_outclk $end
+$var wire 1 I d[0]~input_o $end
+$var wire 1 J ld~input_o $end
+$var wire 1 K js|Q~1_combout $end
+$var wire 1 L clr~input_o $end
+$var wire 1 M clr~inputclkctrl_outclk $end
+$var wire 1 N en~input_o $end
+$var wire 1 O d[1]~input_o $end
+$var wire 1 P ud~input_o $end
+$var wire 1 Q js|Add0~1_cout $end
+$var wire 1 R js|Add0~2_combout $end
+$var wire 1 S js|Add0~3 $end
+$var wire 1 T js|Add0~5_combout $end
+$var wire 1 U d[2]~input_o $end
+$var wire 1 V js|Add0~7_combout $end
+$var wire 1 W js|Add0~6 $end
+$var wire 1 X js|Add0~8_combout $end
+$var wire 1 Y js|Q[3]~0_combout $end
+$var wire 1 Z d[3]~input_o $end
+$var wire 1 [ js|CO~0_combout $end
+$var wire 1 \ js|CO~1_combout $end
+$var wire 1 ] js|Add0~4_combout $end
+$var wire 1 ^ js|CO~2_combout $end
+$var wire 1 _ ym|Mux0~0_combout $end
+$var wire 1 ` ym|Mux7~0_combout $end
+$var wire 1 a ym|Mux7~0clkctrl_outclk $end
+$var wire 1 b ym|Mux1~0_combout $end
+$var wire 1 c ym|Mux2~0_combout $end
+$var wire 1 d ym|Mux3~0_combout $end
+$var wire 1 e ym|Mux4~0_combout $end
+$var wire 1 f ym|Mux5~0_combout $end
+$var wire 1 g ym|Mux6~0_combout $end
+$var wire 1 h ym|codeout [6] $end
+$var wire 1 i ym|codeout [5] $end
+$var wire 1 j ym|codeout [4] $end
+$var wire 1 k ym|codeout [3] $end
+$var wire 1 l ym|codeout [2] $end
+$var wire 1 m ym|codeout [1] $end
+$var wire 1 n ym|codeout [0] $end
+$var wire 1 o js|Q [3] $end
+$var wire 1 p js|Q [2] $end
+$var wire 1 q js|Q [1] $end
+$var wire 1 r js|Q [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+b11 #
+1$
+0%
+0&
+1'
+0+
+0*
+0)
+0(
+12
+11
+10
+1/
+1.
+1-
+0,
+13
+04
+15
+x6
+17
+18
+19
+0:
+0;
+0<
+0=
+1>
+1?
+1@
+1A
+1B
+1C
+1D
+0E
+1F
+0G
+0H
+1I
+0J
+1K
+0L
+0M
+1N
+1O
+0P
+0Q
+1R
+1S
+1T
+0U
+0V
+0W
+1X
+1Y
+0Z
+1[
+1\
+0]
+1^
+0_
+1`
+1a
+1b
+0c
+0d
+0e
+0f
+0g
+1n
+1m
+1l
+1k
+1j
+1i
+0h
+0r
+0q
+0p
+0o
+$end
+#30000
+1!
+1G
+1H
+#60000
+0!
+0G
+0H
+#90000
+1!
+1G
+1H
+#120000
+0!
+0G
+0H
+#150000
+1!
+1G
+1H
+#180000
+0!
+0G
+0H
+#210000
+1!
+1G
+1H
+#240000
+0!
+0G
+0H
+#270000
+1!
+1G
+1H
+#300000
+0!
+0G
+0H
+#330000
+1!
+1G
+1H
+#360000
+0!
+0G
+0H
+#390000
+1!
+1G
+1H
+#420000
+0!
+0G
+0H
+#450000
+1!
+1G
+1H
+#480000
+0!
+0G
+0H
+#510000
+1!
+1G
+1H
+#540000
+0!
+0G
+0H
+#570000
+1!
+1G
+1H
+#600000
+0!
+0G
+0H
+#630000
+1!
+1G
+1H
+#660000
+0!
+0G
+0H
+#690000
+1!
+1G
+1H
+#720000
+0!
+0G
+0H
+#750000
+1!
+1G
+1H
+#780000
+0!
+0G
+0H
+#810000
+1!
+1G
+1H
+#840000
+0!
+0G
+0H
+#870000
+1!
+1G
+1H
+#900000
+0!
+0G
+0H
+#930000
+1!
+1G
+1H
+#960000
+0!
+0G
+0H
+#990000
+1!
+1G
+1H
+#1000000

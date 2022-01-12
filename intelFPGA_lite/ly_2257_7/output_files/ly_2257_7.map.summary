@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Dec 07 19:17:11 2021
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : ly_2257_7
+Top-level Entity Name : ly_2257_7
+Family : Cyclone IV E
+Total logic elements : 537
+    Total combinational functions : 537
+    Dedicated logic registers : 337
+Total registers : 337
+Total pins : 41
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

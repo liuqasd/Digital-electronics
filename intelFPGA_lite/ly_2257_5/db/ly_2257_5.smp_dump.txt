@@ -1,0 +1,7 @@
+
+State Machine - |ly_2257_5|ly_2257_5_1:fd|state
+Name state.key3 state.key2 state.key1 state.key0 
+state.key0 0 0 0 0 
+state.key1 0 0 1 1 
+state.key2 0 1 0 1 
+state.key3 1 0 0 1 

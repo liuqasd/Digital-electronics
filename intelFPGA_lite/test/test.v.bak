@@ -1,0 +1,52 @@
+module test(clk_in,sel,clk_out,CO1,CO2,out1,out2);
+input clk_in,sel;
+output reg clk_out;
+output reg out1=0;
+output reg out2=0;
+output reg [15:0] CO1=0;
+output reg [15:0] CO2=0;
+always@(posedge clk_in)
+begin
+	if(CO1==22172)
+	begin
+		CO1<=0;
+		out1=~out1;
+	end
+	else 
+	begin
+		if(CO1==17738)//17738
+		begin
+			out1<=~out1;
+	//		CO1<=0;
+		end
+		CO1<=CO1+1'd1;
+	end
+end
+
+always@(posedge clk_in)
+begin
+	if(CO2==4080)//4080
+	begin
+		CO2<=0;
+		out2=~out2;
+	end
+	else 
+	begin
+	 if(CO2==3264)//3264
+			begin
+				out2<=~out2;
+		//		CO2<=0;
+			end
+		CO2<=CO2+1'd1;	
+	end
+end
+
+always@(posedge clk_in)
+begin
+	if(sel==0)
+		clk_out<=out1;
+	else
+		clk_out<=out2;
+end
+
+endmodule

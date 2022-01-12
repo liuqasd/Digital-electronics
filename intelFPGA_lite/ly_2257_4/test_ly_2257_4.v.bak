@@ -1,0 +1,22 @@
+`timescale 10ns / 1ns
+module test_ly_2257_4();
+	reg clk;//输入
+	reg x;
+	wire c;//输出
+		
+	initial//初始化 系统复位
+		begin
+			clk = 0;
+			x = 0;
+			#500000
+			x = 1;
+		end
+		
+	always #1
+		clk = ~clk;
+	ly_2257_4 test(
+		.clk(clk),
+		.x(x),
+		.c(c)
+	);
+endmodule

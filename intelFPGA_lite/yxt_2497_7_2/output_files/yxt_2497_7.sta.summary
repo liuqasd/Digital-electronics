@@ -1,0 +1,113 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'yxt_2497_7_3:play|tone[0]'
+Slack : -8.871
+TNS   : -8.871
+
+Type  : Slow 1200mV 85C Model Setup 'clk_in'
+Slack : -4.305
+TNS   : -1025.088
+
+Type  : Slow 1200mV 85C Model Setup 'yxt_2497_7_3:play|yxt_2497_7_1:d4|clk_div'
+Slack : -2.028
+TNS   : -11.595
+
+Type  : Slow 1200mV 85C Model Hold 'yxt_2497_7_3:play|tone[0]'
+Slack : -0.100
+TNS   : -0.100
+
+Type  : Slow 1200mV 85C Model Hold 'clk_in'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'yxt_2497_7_3:play|yxt_2497_7_1:d4|clk_div'
+Slack : 0.464
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_in'
+Slack : -3.000
+TNS   : -492.223
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'yxt_2497_7_3:play|tone[0]'
+Slack : -2.296
+TNS   : -21.051
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'yxt_2497_7_3:play|yxt_2497_7_1:d4|clk_div'
+Slack : -1.487
+TNS   : -11.896
+
+Type  : Slow 1200mV 0C Model Setup 'yxt_2497_7_3:play|tone[0]'
+Slack : -8.377
+TNS   : -8.377
+
+Type  : Slow 1200mV 0C Model Setup 'clk_in'
+Slack : -4.015
+TNS   : -932.778
+
+Type  : Slow 1200mV 0C Model Setup 'yxt_2497_7_3:play|yxt_2497_7_1:d4|clk_div'
+Slack : -1.772
+TNS   : -10.067
+
+Type  : Slow 1200mV 0C Model Hold 'yxt_2497_7_3:play|tone[0]'
+Slack : -0.112
+TNS   : -0.112
+
+Type  : Slow 1200mV 0C Model Hold 'clk_in'
+Slack : 0.400
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'yxt_2497_7_3:play|yxt_2497_7_1:d4|clk_div'
+Slack : 0.417
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_in'
+Slack : -3.000
+TNS   : -492.223
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'yxt_2497_7_3:play|tone[0]'
+Slack : -2.278
+TNS   : -18.884
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'yxt_2497_7_3:play|yxt_2497_7_1:d4|clk_div'
+Slack : -1.487
+TNS   : -11.896
+
+Type  : Fast 1200mV 0C Model Setup 'yxt_2497_7_3:play|tone[0]'
+Slack : -3.586
+TNS   : -3.586
+
+Type  : Fast 1200mV 0C Model Setup 'clk_in'
+Slack : -1.246
+TNS   : -234.689
+
+Type  : Fast 1200mV 0C Model Setup 'yxt_2497_7_3:play|yxt_2497_7_1:d4|clk_div'
+Slack : -0.299
+TNS   : -1.162
+
+Type  : Fast 1200mV 0C Model Hold 'yxt_2497_7_3:play|tone[0]'
+Slack : -0.040
+TNS   : -0.040
+
+Type  : Fast 1200mV 0C Model Hold 'clk_in'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'yxt_2497_7_3:play|yxt_2497_7_1:d4|clk_div'
+Slack : 0.194
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_in'
+Slack : -3.000
+TNS   : -352.213
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'yxt_2497_7_3:play|yxt_2497_7_1:d4|clk_div'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'yxt_2497_7_3:play|tone[0]'
+Slack : -0.736
+TNS   : -4.754
+
+------------------------------------------------------------

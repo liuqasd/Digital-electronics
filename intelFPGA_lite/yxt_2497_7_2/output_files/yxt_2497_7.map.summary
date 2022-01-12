@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Dec 06 16:07:53 2021
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : yxt_2497_7
+Top-level Entity Name : yxt_2497_7
+Family : Cyclone IV E
+Total logic elements : 541
+    Total combinational functions : 541
+    Dedicated logic registers : 337
+Total registers : 337
+Total pins : 41
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

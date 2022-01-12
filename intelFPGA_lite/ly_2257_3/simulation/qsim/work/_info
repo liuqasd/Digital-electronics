@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/intelFPGA_lite/ly_2257_3/simulation/qsim
+vhard_block
+Z1 !s110 1635164078
+!i10b 1
+!s100 hH0k1AlfPQ=k>J:c;BD<U2
+IH0XYPlPZlZ>NnQEmgBAj:2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1635164076
+Z4 8ly_2257_3.vo
+Z5 Fly_2257_3.vo
+L0 990
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1635164078.000000
+Z8 !s107 ly_2257_3.vo|
+Z9 !s90 -work|work|ly_2257_3.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vly_2257_3
+R1
+!i10b 1
+!s100 fbnQV@S_mX64<C9;mP@`51
+IJIS[a4_7?Od68jfTSg8eG3
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vly_2257_3_vlg_vec_tst
+R1
+!i10b 1
+!s100 e2[eZCaM7i[nKIgEW?12H3
+IQ23UZ>lD=W>RK_W7jnN6R3
+R2
+R0
+w1635164072
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11

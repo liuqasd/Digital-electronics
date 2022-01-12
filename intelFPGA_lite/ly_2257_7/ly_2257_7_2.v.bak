@@ -1,0 +1,31 @@
+module gzy_2228_7_2(clk_in,reset,div,current,Auto,clk_out,clk_out2);
+input clk_in,reset,Auto;
+input [20:0] div;
+input [20:0] current;
+output reg clk_out;
+output reg clk_out2;
+reg [19:0]cnt;
+wire [20:0] N;
+
+assign N=(Auto)?current:div;
+
+always@(posedge clk_in or negedge reset)
+begin
+	if(!reset)
+		begin
+			cnt<=0;
+			clk_out<=0;
+			clk_out2<=0;
+		end
+	else if(N==0) cnt<=0;
+	else if(cnt==N/2-1)
+		begin
+			clk_out<=~clk_out;
+			clk_out2<=~clk_out2;
+			cnt<=0;
+		end
+	else
+		cnt<=cnt+1'b1;
+end
+
+endmodule

@@ -1,0 +1,49 @@
+|ly_2257_2
+clk => clk.IN1
+en => en.IN1
+Q[0] << Q[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] << Q[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] << Q[2].DB_MAX_OUTPUT_PORT_TYPE
+codeout[0] << ly_2257_2_2:b.port1
+codeout[1] << ly_2257_2_2:b.port1
+codeout[2] << ly_2257_2_2:b.port1
+codeout[3] << ly_2257_2_2:b.port1
+codeout[4] << ly_2257_2_2:b.port1
+codeout[5] << ly_2257_2_2:b.port1
+codeout[6] << ly_2257_2_2:b.port1
+
+
+|ly_2257_2|ly_2257_2_1:a
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+en => Q[0]~reg0.ENA
+en => Q[1]~reg0.ENA
+en => Q[2]~reg0.ENA
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ly_2257_2|ly_2257_2_2:b
+Q[0] => Mux0.IN10
+Q[0] => Mux1.IN10
+Q[0] => Mux2.IN10
+Q[1] => Decoder0.IN1
+Q[1] => Mux0.IN9
+Q[1] => Mux1.IN9
+Q[1] => Mux2.IN9
+Q[2] => Decoder0.IN0
+Q[2] => Mux0.IN8
+Q[2] => Mux1.IN8
+Q[2] => Mux2.IN8
+Q[2] => codeout[3].DATAIN
+codeout[0] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+codeout[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+codeout[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+codeout[3] <= Q[2].DB_MAX_OUTPUT_PORT_TYPE
+codeout[4] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+codeout[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+codeout[6] <= <GND>
+
+

@@ -1,0 +1,17 @@
+module ly_2257_2_2(Q,codeout); //译码器
+input [2:0]Q;  //译码器输入接收计数器输出
+output reg[6:0]codeout; //译码器输出
+always@(Q)
+begin
+	case(Q)
+	4'd0:codeout <= 7'b000_0000;  //Q为0	点亮a管
+	4'd1:codeout <= 7'b000_0001;  //Q为1	点亮b管
+	4'd2:codeout <= 7'b000_0011;	//Q为2	点亮c管
+	4'd3:codeout <= 7'b000_0111;	//Q为3	点亮d管
+	4'd4:codeout <= 7'b000_1111;	//Q为4	点亮e管
+	4'd5:codeout <= 7'b001_1111;	//Q为5	点亮f管
+	4'd6:codeout <= 7'b011_1111;	//Q为6	不亮
+	default:codeout <=7'bx;
+	endcase
+end
+endmodule

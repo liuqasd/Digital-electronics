@@ -1,0 +1,134 @@
+|ly_2257_5
+clk => clk.IN1
+reset_n => reset_n.IN2
+key => key.IN1
+key_state << key_state.DB_MAX_OUTPUT_PORT_TYPE
+Q[0] << Q[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] << Q[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] << Q[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] << Q[3].DB_MAX_OUTPUT_PORT_TYPE
+codeout[0] << ly_2257_5_3:ym.port1
+codeout[1] << ly_2257_5_3:ym.port1
+codeout[2] << ly_2257_5_3:ym.port1
+codeout[3] << ly_2257_5_3:ym.port1
+codeout[4] << ly_2257_5_3:ym.port1
+codeout[5] << ly_2257_5_3:ym.port1
+codeout[6] << ly_2257_5_3:ym.port1
+CO << ly_2257_5_2:js.port3
+
+
+|ly_2257_5|ly_2257_5_1:fd
+clk => key_state~reg0.CLK
+clk => cnt_en.CLK
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+clk => cnt[4].CLK
+clk => cnt[5].CLK
+clk => cnt[6].CLK
+clk => cnt[7].CLK
+clk => cnt[8].CLK
+clk => cnt[9].CLK
+clk => cnt[10].CLK
+clk => cnt[11].CLK
+clk => cnt[12].CLK
+clk => cnt[13].CLK
+clk => cnt[14].CLK
+clk => cnt[15].CLK
+clk => cnt[16].CLK
+clk => cnt[17].CLK
+clk => cnt[18].CLK
+clk => cnt[19].CLK
+clk => cnt[20].CLK
+clk => state~1.DATAIN
+reset_n => cnt[0].ACLR
+reset_n => cnt[1].ACLR
+reset_n => cnt[2].ACLR
+reset_n => cnt[3].ACLR
+reset_n => cnt[4].ACLR
+reset_n => cnt[5].ACLR
+reset_n => cnt[6].ACLR
+reset_n => cnt[7].ACLR
+reset_n => cnt[8].ACLR
+reset_n => cnt[9].ACLR
+reset_n => cnt[10].ACLR
+reset_n => cnt[11].ACLR
+reset_n => cnt[12].ACLR
+reset_n => cnt[13].ACLR
+reset_n => cnt[14].ACLR
+reset_n => cnt[15].ACLR
+reset_n => cnt[16].ACLR
+reset_n => cnt[17].ACLR
+reset_n => cnt[18].ACLR
+reset_n => cnt[19].ACLR
+reset_n => cnt[20].ACLR
+reset_n => key_state~reg0.ACLR
+reset_n => cnt_en.ACLR
+reset_n => state~3.DATAIN
+key => always1.IN1
+key => always1.IN1
+key => always1.IN1
+key => always1.IN1
+key_state <= key_state~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ly_2257_5|ly_2257_5_2:js
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+clr => CO.IN1
+clr => Q[0]~reg0.ACLR
+clr => Q[1]~reg0.ACLR
+clr => Q[2]~reg0.ACLR
+clr => Q[3]~reg0.ACLR
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CO <= CO.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ly_2257_5|ly_2257_5_3:ym
+Q[0] => Mux0.IN19
+Q[0] => Mux1.IN19
+Q[0] => Mux2.IN19
+Q[0] => Mux3.IN19
+Q[0] => Mux4.IN19
+Q[0] => Mux5.IN19
+Q[0] => Mux6.IN19
+Q[0] => Mux7.IN19
+Q[1] => Mux0.IN18
+Q[1] => Mux1.IN18
+Q[1] => Mux2.IN18
+Q[1] => Mux3.IN18
+Q[1] => Mux4.IN18
+Q[1] => Mux5.IN18
+Q[1] => Mux6.IN18
+Q[1] => Mux7.IN18
+Q[2] => Mux0.IN17
+Q[2] => Mux1.IN17
+Q[2] => Mux2.IN17
+Q[2] => Mux3.IN17
+Q[2] => Mux4.IN17
+Q[2] => Mux5.IN17
+Q[2] => Mux6.IN17
+Q[2] => Mux7.IN17
+Q[3] => Mux0.IN16
+Q[3] => Mux1.IN16
+Q[3] => Mux2.IN16
+Q[3] => Mux3.IN16
+Q[3] => Mux4.IN16
+Q[3] => Mux5.IN16
+Q[3] => Mux6.IN16
+Q[3] => Mux7.IN16
+codeout[0] <= codeout[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+codeout[1] <= codeout[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+codeout[2] <= codeout[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+codeout[3] <= codeout[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+codeout[4] <= codeout[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+codeout[5] <= codeout[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+codeout[6] <= codeout[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,53 @@
+module ly_2257_4(clk,x,c);
+	input clk,x;
+	output c;
+	
+	parameter fp1 = 13594;//分频数1
+	parameter fp2 = 135943;//分频数2
+	reg [18:0] count = 0;//分频计数 奇数
+	reg [18:0] count1 = 0;//分频计数 偶数1
+	reg [18:0] count2 = 0;//分频计数 偶数2
+	reg c0 = 1;//偶数结果 
+	reg c1 = 1;//奇数结果1 上升
+	reg c2 = 1;//奇数结果2 下降
+		
+	always@(posedge clk)//偶数部分
+		begin
+			if(count < fp1/2-1)
+				begin
+					count <= count+1'b1;
+					c0 <= c0;
+				end
+			else
+				begin
+					count <= 18'b0;
+					c0 <= ~c0;
+				end
+		end
+		
+	always@(posedge clk)//上升沿
+		if(count1 < fp2-1)
+			count1 <= count1+1'b1;
+		else
+			count1 <= 18'b0;
+
+	always@(posedge clk)
+		if(count1 < fp2/2)
+			c1 <= 1'b1;
+		else 
+			c1 <= 1'b0;
+		
+	always@(negedge clk)//下降沿
+		if(count2 < fp2 -1)
+			count2 <= count2+1'b1;
+		else
+			count2 <= 18'b0;
+		
+	always@(negedge clk)
+		if(count2 < fp2/2)
+			c2 <= 1'b1;
+		else 
+			c2 <= 1'b0;
+				
+	assign c = x?(c1|c2):c0;//如果x=1对应为奇数，x=0对应为偶数
+endmodule

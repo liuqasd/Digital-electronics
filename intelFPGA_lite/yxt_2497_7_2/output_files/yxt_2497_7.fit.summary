@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Dec 06 16:08:07 2021
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : yxt_2497_7
+Top-level Entity Name : yxt_2497_7
+Family : Cyclone IV E
+Device : EP4CE6E22C8
+Timing Models : Final
+Total logic elements : 555 / 6,272 ( 9 % )
+    Total combinational functions : 541 / 6,272 ( 9 % )
+    Dedicated logic registers : 337 / 6,272 ( 5 % )
+Total registers : 337
+Total pins : 41 / 92 ( 45 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

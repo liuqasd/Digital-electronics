@@ -1,0 +1,8 @@
+D:/intelFPGA_lite/test/test_.v {1 {vlog -work work -stats=none D:/intelFPGA_lite/test/test_.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module test_
+
+Top level modules:
+	test_
+
+} {} {}}

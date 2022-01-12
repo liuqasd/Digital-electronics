@@ -1,0 +1,18 @@
+module gzy_2228_7(clk_in,reset,Key,Auto,div,current,name1,name2,codeout,clk_out,clk_out2);
+input clk_in,reset,Auto;
+input [13:0]Key;
+
+output [7:0]codeout;
+output [20:0] div;
+output [3:0] name1;
+output [3:0] name2;
+output [20:0]current;
+output clk_out;
+output clk_out2;
+
+gzy_2228_7_1 datasheet(clk_in,reset,Key,div,name1); 
+gzy_2228_7_2 div_(clk_in,reset,div,current,Auto,clk_out,clk_out2);
+gzy_2228_7_3 out(name1,name2,codeout);
+gzy_2228_7_4 autoplay(clk_in,Auto,reset,current,name2);
+
+endmodule 

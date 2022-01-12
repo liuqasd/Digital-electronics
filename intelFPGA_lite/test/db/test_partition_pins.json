@@ -1,0 +1,157 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "clk_out",
+					"strict" : false
+				},
+				{
+					"name" : "CO1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "CO1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "CO1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "CO1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "CO1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "CO1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "CO1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "CO1[7]",
+					"strict" : false
+				},
+				{
+					"name" : "CO1[8]",
+					"strict" : false
+				},
+				{
+					"name" : "CO1[9]",
+					"strict" : false
+				},
+				{
+					"name" : "CO1[10]",
+					"strict" : false
+				},
+				{
+					"name" : "CO1[11]",
+					"strict" : false
+				},
+				{
+					"name" : "CO1[12]",
+					"strict" : false
+				},
+				{
+					"name" : "CO1[13]",
+					"strict" : false
+				},
+				{
+					"name" : "CO1[14]",
+					"strict" : false
+				},
+				{
+					"name" : "CO1[15]",
+					"strict" : false
+				},
+				{
+					"name" : "CO2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "CO2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "CO2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "CO2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "CO2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "CO2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "CO2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "CO2[7]",
+					"strict" : false
+				},
+				{
+					"name" : "CO2[8]",
+					"strict" : false
+				},
+				{
+					"name" : "CO2[9]",
+					"strict" : false
+				},
+				{
+					"name" : "CO2[10]",
+					"strict" : false
+				},
+				{
+					"name" : "CO2[11]",
+					"strict" : false
+				},
+				{
+					"name" : "CO2[12]",
+					"strict" : false
+				},
+				{
+					"name" : "CO2[13]",
+					"strict" : false
+				},
+				{
+					"name" : "CO2[14]",
+					"strict" : false
+				},
+				{
+					"name" : "CO2[15]",
+					"strict" : false
+				},
+				{
+					"name" : "out1",
+					"strict" : false
+				},
+				{
+					"name" : "out2",
+					"strict" : false
+				},
+				{
+					"name" : "sel",
+					"strict" : false
+				},
+				{
+					"name" : "clk_in",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

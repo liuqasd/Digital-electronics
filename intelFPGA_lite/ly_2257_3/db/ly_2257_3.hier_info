@@ -1,0 +1,106 @@
+|ly_2257_3
+ud => ud.IN1
+clk => clk.IN1
+clr => clr.IN1
+ld => ld.IN1
+d[0] => d[0].IN1
+d[1] => d[1].IN1
+d[2] => d[2].IN1
+d[3] => d[3].IN1
+Q[0] << Q[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] << Q[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] << Q[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] << Q[3].DB_MAX_OUTPUT_PORT_TYPE
+CO << ly_2257_3_1:js.port6
+codeout[0] << ly_2257_3_2:ym.port1
+codeout[1] << ly_2257_3_2:ym.port1
+codeout[2] << ly_2257_3_2:ym.port1
+codeout[3] << ly_2257_3_2:ym.port1
+codeout[4] << ly_2257_3_2:ym.port1
+codeout[5] << ly_2257_3_2:ym.port1
+codeout[6] << ly_2257_3_2:ym.port1
+seg << ly_2257_3_2:ym.port2
+en => en.IN1
+
+
+|ly_2257_3|ly_2257_3_1:js
+ud => Q.OUTPUTSELECT
+ud => Q.OUTPUTSELECT
+ud => Q.OUTPUTSELECT
+ud => Q.OUTPUTSELECT
+ud => CO.IN0
+ud => CO.IN0
+ud => CO.IN0
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+clr => CO.IN1
+clr => CO.IN1
+clr => Q[0]~reg0.ACLR
+clr => Q[1]~reg0.ACLR
+clr => Q[2]~reg0.ACLR
+clr => Q[3]~reg0.ACLR
+clr => CO.IN1
+ld => Q.OUTPUTSELECT
+ld => Q.OUTPUTSELECT
+ld => Q.OUTPUTSELECT
+ld => Q.OUTPUTSELECT
+d[0] => Q.DATAB
+d[1] => Q.DATAB
+d[2] => Q.DATAB
+d[3] => Q.DATAB
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CO <= CO.DB_MAX_OUTPUT_PORT_TYPE
+en => Q[0]~reg0.ENA
+en => Q[3]~reg0.ENA
+en => Q[2]~reg0.ENA
+en => Q[1]~reg0.ENA
+
+
+|ly_2257_3|ly_2257_3_2:ym
+Q[0] => Mux0.IN19
+Q[0] => Mux1.IN19
+Q[0] => Mux2.IN19
+Q[0] => Mux3.IN19
+Q[0] => Mux4.IN19
+Q[0] => Mux5.IN19
+Q[0] => Mux6.IN19
+Q[0] => Mux7.IN19
+Q[1] => Mux0.IN18
+Q[1] => Mux1.IN18
+Q[1] => Mux2.IN18
+Q[1] => Mux3.IN18
+Q[1] => Mux4.IN18
+Q[1] => Mux5.IN18
+Q[1] => Mux6.IN18
+Q[1] => Mux7.IN18
+Q[2] => Mux0.IN17
+Q[2] => Mux1.IN17
+Q[2] => Mux2.IN17
+Q[2] => Mux3.IN17
+Q[2] => Mux4.IN17
+Q[2] => Mux5.IN17
+Q[2] => Mux6.IN17
+Q[2] => Mux7.IN17
+Q[3] => Mux0.IN16
+Q[3] => Mux1.IN16
+Q[3] => Mux2.IN16
+Q[3] => Mux3.IN16
+Q[3] => Mux4.IN16
+Q[3] => Mux5.IN16
+Q[3] => Mux6.IN16
+Q[3] => Mux7.IN16
+codeout[0] <= codeout[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+codeout[1] <= codeout[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+codeout[2] <= codeout[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+codeout[3] <= codeout[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+codeout[4] <= codeout[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+codeout[5] <= codeout[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+codeout[6] <= codeout[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+seg <= <VCC>
+
+

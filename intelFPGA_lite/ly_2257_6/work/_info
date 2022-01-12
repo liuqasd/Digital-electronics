@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/intelFPGA_lite/ly_2257_4
+vly_2257_6
+Z0 !s110 1637061323
+!i10b 1
+!s100 ZIkNLMHkm0gd^Pd_WPWA`1
+Io^[:cb9YzbUHzdO;:nzX52
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/intelFPGA_lite/ly_2257_6
+w1637057108
+8D:/intelFPGA_lite/ly_2257_6/ly_2257_6.v
+FD:/intelFPGA_lite/ly_2257_6/ly_2257_6.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1637061323.000000
+!s107 D:/intelFPGA_lite/ly_2257_6/ly_2257_6.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/intelFPGA_lite/ly_2257_6/ly_2257_6.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vly_2257_6_1
+R0
+!i10b 1
+!s100 2gRclL7aGPSQLL_OE4YFC3
+I1c]eSoASb7l_GQLKgT4Ok2
+R1
+R2
+Z7 w1637057048
+8D:/intelFPGA_lite/ly_2257_6/ly_2257_6_1.v
+FD:/intelFPGA_lite/ly_2257_6/ly_2257_6_1.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/intelFPGA_lite/ly_2257_6/ly_2257_6_1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/intelFPGA_lite/ly_2257_6/ly_2257_6_1.v|
+!i113 1
+R5
+R6
+vly_2257_6_2
+R0
+!i10b 1
+!s100 VJGenK1`BmZOQ]lefWFjo1
+I<hO8J39l2g?10FSQOazNL1
+R1
+R2
+w1637056270
+8D:/intelFPGA_lite/ly_2257_6/ly_2257_6_2.v
+FD:/intelFPGA_lite/ly_2257_6/ly_2257_6_2.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/intelFPGA_lite/ly_2257_6/ly_2257_6_2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/intelFPGA_lite/ly_2257_6/ly_2257_6_2.v|
+!i113 1
+R5
+R6
+vtest_ly_2257_6
+!s110 1637061324
+!i10b 1
+!s100 Ri7aCHG>_Ti7`_kR?oU7m1
+I5d7hj_aYR3;`DoWXLJc@N3
+R1
+R2
+R7
+8D:/intelFPGA_lite/ly_2257_6/test_ly_2257_6.v
+FD:/intelFPGA_lite/ly_2257_6/test_ly_2257_6.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/intelFPGA_lite/ly_2257_6/test_ly_2257_6.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/intelFPGA_lite/ly_2257_6/test_ly_2257_6.v|
+!i113 1
+R5
+R6

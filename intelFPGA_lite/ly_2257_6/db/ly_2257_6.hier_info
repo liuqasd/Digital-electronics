@@ -1,0 +1,102 @@
+|ly_2257_6
+Ain => Ain.IN1
+Bin => Bin.IN1
+clkin => clkin.IN1
+rst => rst.IN1
+cnt[0] << cnt[0].DB_MAX_OUTPUT_PORT_TYPE
+cnt[1] << cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+cnt[2] << cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+cnt[3] << cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+codeout[0] << ly_2257_6_2:ly6_2.port1
+codeout[1] << ly_2257_6_2:ly6_2.port1
+codeout[2] << ly_2257_6_2:ly6_2.port1
+codeout[3] << ly_2257_6_2:ly6_2.port1
+codeout[4] << ly_2257_6_2:ly6_2.port1
+codeout[5] << ly_2257_6_2:ly6_2.port1
+codeout[6] << ly_2257_6_2:ly6_2.port1
+A << ly_2257_6_1:ly6_1.port5
+B << ly_2257_6_1:ly6_1.port6
+
+
+|ly_2257_6|ly_2257_6_1:ly6_1
+Ain => Ain_reg0.DATAIN
+Bin => Bin_reg0.DATAIN
+rst => cnt[0]~reg0.ACLR
+rst => cnt[1]~reg0.ACLR
+rst => cnt[2]~reg0.ACLR
+rst => cnt[3]~reg0.ACLR
+rst => A~reg0.ACLR
+rst => B~reg0.ACLR
+rst => Bin_reg1.ACLR
+rst => Bin_reg0.ACLR
+rst => Ain_reg1.ACLR
+rst => Ain_reg0.ACLR
+rst => tcnt_full.ACLR
+rst => tcnt[0].ACLR
+rst => tcnt[1].ACLR
+rst => tcnt[2].ACLR
+rst => tcnt[3].ACLR
+rst => tcnt1_full.ACLR
+rst => tcnt1[0].ACLR
+rst => tcnt1[1].ACLR
+rst => tcnt1[2].ACLR
+rst => tcnt1[3].ACLR
+rst => B_reg0.ACLR
+rst => A_reg1.ACLR
+rst => A_reg0.ACLR
+clkin => B_reg0.CLK
+clkin => A_reg1.CLK
+clkin => A_reg0.CLK
+clkin => B~reg0.CLK
+clkin => A~reg0.CLK
+clkin => tcnt1_full.CLK
+clkin => tcnt1[0].CLK
+clkin => tcnt1[1].CLK
+clkin => tcnt1[2].CLK
+clkin => tcnt1[3].CLK
+clkin => tcnt_full.CLK
+clkin => tcnt[0].CLK
+clkin => tcnt[1].CLK
+clkin => tcnt[2].CLK
+clkin => tcnt[3].CLK
+clkin => Bin_reg1.CLK
+clkin => Bin_reg0.CLK
+clkin => Ain_reg1.CLK
+clkin => Ain_reg0.CLK
+cnt[0] <= cnt[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cnt[1] <= cnt[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cnt[2] <= cnt[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+cnt[3] <= cnt[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+A <= A~reg0.DB_MAX_OUTPUT_PORT_TYPE
+B <= B~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ly_2257_6|ly_2257_6_2:ly6_2
+cnt[0] => Mux0.IN19
+cnt[0] => Decoder0.IN2
+cnt[0] => Mux1.IN19
+cnt[0] => Mux2.IN19
+cnt[0] => Mux3.IN19
+cnt[1] => Mux0.IN18
+cnt[1] => Decoder0.IN1
+cnt[1] => Mux1.IN18
+cnt[1] => Mux2.IN18
+cnt[1] => Mux3.IN18
+cnt[2] => Mux0.IN17
+cnt[2] => Decoder0.IN0
+cnt[2] => Mux1.IN17
+cnt[2] => Mux2.IN17
+cnt[2] => Mux3.IN17
+cnt[3] => Mux0.IN16
+cnt[3] => Mux1.IN16
+cnt[3] => Mux2.IN16
+cnt[3] => Mux3.IN16
+codeout[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+codeout[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+codeout[2] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+codeout[3] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+codeout[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+codeout[5] <= codeout.DB_MAX_OUTPUT_PORT_TYPE
+codeout[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

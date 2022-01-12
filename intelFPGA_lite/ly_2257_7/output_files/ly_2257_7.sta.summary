@@ -1,0 +1,113 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'ly_2257_7_3:play|tone[0]'
+Slack : -7.306
+TNS   : -7.306
+
+Type  : Slow 1200mV 85C Model Setup 'clk_in'
+Slack : -4.298
+TNS   : -1018.023
+
+Type  : Slow 1200mV 85C Model Setup 'ly_2257_7_3:play|ly_2257_7_1:d4|clk_div'
+Slack : -2.002
+TNS   : -12.587
+
+Type  : Slow 1200mV 85C Model Hold 'ly_2257_7_3:play|tone[0]'
+Slack : -1.374
+TNS   : -1.374
+
+Type  : Slow 1200mV 85C Model Hold 'clk_in'
+Slack : 0.433
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'ly_2257_7_3:play|ly_2257_7_1:d4|clk_div'
+Slack : 0.771
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_in'
+Slack : -3.000
+TNS   : -492.223
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ly_2257_7_3:play|tone[0]'
+Slack : -1.839
+TNS   : -19.830
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ly_2257_7_3:play|ly_2257_7_1:d4|clk_div'
+Slack : -1.487
+TNS   : -11.896
+
+Type  : Slow 1200mV 0C Model Setup 'ly_2257_7_3:play|tone[0]'
+Slack : -6.985
+TNS   : -6.985
+
+Type  : Slow 1200mV 0C Model Setup 'clk_in'
+Slack : -3.997
+TNS   : -921.943
+
+Type  : Slow 1200mV 0C Model Setup 'ly_2257_7_3:play|ly_2257_7_1:d4|clk_div'
+Slack : -1.713
+TNS   : -10.697
+
+Type  : Slow 1200mV 0C Model Hold 'ly_2257_7_3:play|tone[0]'
+Slack : -1.254
+TNS   : -1.254
+
+Type  : Slow 1200mV 0C Model Hold 'clk_in'
+Slack : 0.383
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'ly_2257_7_3:play|ly_2257_7_1:d4|clk_div'
+Slack : 0.715
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_in'
+Slack : -3.000
+TNS   : -492.223
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ly_2257_7_3:play|tone[0]'
+Slack : -1.866
+TNS   : -18.413
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ly_2257_7_3:play|ly_2257_7_1:d4|clk_div'
+Slack : -1.487
+TNS   : -11.896
+
+Type  : Fast 1200mV 0C Model Setup 'ly_2257_7_3:play|tone[0]'
+Slack : -2.863
+TNS   : -2.863
+
+Type  : Fast 1200mV 0C Model Setup 'clk_in'
+Slack : -1.307
+TNS   : -232.800
+
+Type  : Fast 1200mV 0C Model Setup 'ly_2257_7_3:play|ly_2257_7_1:d4|clk_div'
+Slack : -0.316
+TNS   : -1.426
+
+Type  : Fast 1200mV 0C Model Hold 'ly_2257_7_3:play|tone[0]'
+Slack : -0.693
+TNS   : -0.693
+
+Type  : Fast 1200mV 0C Model Hold 'clk_in'
+Slack : 0.178
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'ly_2257_7_3:play|ly_2257_7_1:d4|clk_div'
+Slack : 0.310
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_in'
+Slack : -3.000
+TNS   : -353.245
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ly_2257_7_3:play|ly_2257_7_1:d4|clk_div'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ly_2257_7_3:play|tone[0]'
+Slack : -0.557
+TNS   : -4.805
+
+------------------------------------------------------------
